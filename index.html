@@ -32,7 +32,7 @@
             height: 12px;
             width: 100%;
         }
-        .three-column {
+        .three-col {
             text-align: center;
             /* Setting font size to 0 prevents 
             extra spacing between elements */
@@ -42,7 +42,7 @@
             width: 100%;
             background: linear-gradient(#ff7154, #ff6363);           
         }
-        .three-column .column {            
+        .three-col .col {            
             display: inline-block;
             font-size: 16px;
             vertical-align: top;
@@ -52,7 +52,7 @@
             padding: 6px 12px;
             border: 0;
         }
-        .two-column {
+        .two-col {
             text-align: center;
             /* Setting font size to 0 prevents 
             extra spacing between elements */
@@ -62,7 +62,7 @@
             width: 100%;
             background-color: purple;           
         }
-        .two-column .column {            
+        .two-col .col {            
             display: inline-block;
             font-size: 16px;
             vertical-align: top;
@@ -72,31 +72,41 @@
             padding: 6px 12px;
             border: 0;
         }
+        .col {
+            width: 100%;
+            max-width: 600px;
+        }
     </style>
 </head>
 <body>
+    <!-- Center tag keeps email centered - deprecated -->
     <center class="wrapper">
+        <!-- Master table for entire email -->
         <table class="container">
+            <!-- Gray dividing bar - top -->
             <tr>
                 <td class="divider-row"></td>
             </tr>
             <tr>
                 <td>
+                    <!-- 3 column layout -->
                     <table>
                         <tr>
-                            <!-- First 3 column element -->
-                            <td class="three-column">
-                                <table class="column">
+                            <td class="three-col">
+                                <!-- Column 1 -->
+                                <table class="col">
                                     <tr>
                                         <td>ONE Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni debitis iste atque reiciendis voluptatibus aperiam ex</td>
                                     </tr>
                                 </table>
-                                <table class="column">
+                                <!-- Column 2 -->
+                                <table class="col">
                                     <tr>
                                         <td>TWO Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni debitis iste atque reiciendis voluptatibus aperiam ex</td>
                                     </tr>
                                 </table>
-                                <table class="column">
+                                <!-- Column 3 -->
+                                <table class="col">
                                     <tr>
                                         <td>THREE Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni debitis iste atque reiciendis voluptatibus aperiam ex</td>
                                     </tr>
@@ -108,15 +118,18 @@
             </tr>
             <tr>
                 <td>
+                    <!-- 2 column layout -->
                     <table>
                         <tr>
-                            <td class="two-column">
-                                <table class="column">
+                            <td class="two-col">
+                                <!-- Column 1 -->
+                                <table class="col">
                                     <tr>
                                         <td>ONE --- Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus consequatur a ipsa possimus impedit modi repudiandae assumenda eos, repellendus velit cum labore quos repellat dolore dolor.</td>
                                     </tr>
                                 </table>
-                                <table class="column">
+                                <!-- Column 2 -->
+                                <table class="col">
                                     <tr>
                                         <td>TWO --- Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus consequatur a ipsa possimus impedit modi repudiandae assumenda eos, repellendus velit cum labore quos repellat dolore dolor.</td>
                                     </tr>
