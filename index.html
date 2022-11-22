@@ -34,6 +34,8 @@
         }
         .three-column {
             text-align: center;
+            /* Setting font size to 0 prevents 
+            extra spacing between elements */
             font-size: 0;
             padding: 12px 0 24px;
             display: inline-block;
@@ -46,6 +48,26 @@
             vertical-align: top;
             text-align: center;
             max-width: 200px;
+            width: 100%;
+            padding: 6px 12px;
+            border: 0;
+        }
+        .two-column {
+            text-align: center;
+            /* Setting font size to 0 prevents 
+            extra spacing between elements */
+            font-size: 0;
+            padding: 12px 0 24px;
+            display: inline-block;
+            width: 100%;
+            background-color: purple;           
+        }
+        .two-column .column {            
+            display: inline-block;
+            font-size: 16px;
+            vertical-align: top;
+            text-align: center;
+            max-width: 300px;
             width: 100%;
             padding: 6px 12px;
             border: 0;
@@ -83,6 +105,26 @@
                         </tr>
                     </table>
                 </td>                
+            </tr>
+            <tr>
+                <td>
+                    <table>
+                        <tr>
+                            <td class="two-column">
+                                <table class="column">
+                                    <tr>
+                                        <td>ONE --- Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus consequatur a ipsa possimus impedit modi repudiandae assumenda eos, repellendus velit cum labore quos repellat dolore dolor.</td>
+                                    </tr>
+                                </table>
+                                <table class="column">
+                                    <tr>
+                                        <td>TWO --- Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus consequatur a ipsa possimus impedit modi repudiandae assumenda eos, repellendus velit cum labore quos repellat dolore dolor.</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
             </tr>            
         </table>
     </center>
