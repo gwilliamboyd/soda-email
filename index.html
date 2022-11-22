@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table center test</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border-collapse: collapse;            
+        }
+        body {
+            color: #ececec;
+            font-family: sans-serif;
+        }
+        .wrapper {
+            width: 100%;
+            table-layout: fixed;
+            background-color: #323232;
+            padding-bottom: 60px;
+        }
+        .container {
+            width: 100%;
+            max-width: 600px;
+            border-collapse: collapse;
+        }
+        .divider-row {
+            background-color: #b5b5b5;
+            height: 12px;
+            width: 100%;
+        }
+        .three-column {
+            text-align: center;
+            font-size: 0;
+            padding: 12px 0 24px;
+            display: inline-block;
+            width: 100%;
+            background: linear-gradient(#ff7154, #ff6363);           
+        }
+        .three-column .column {            
+            display: inline-block;
+            font-size: 16px;
+            vertical-align: top;
+            text-align: center;
+            max-width: 200px;
+            width: 100%;
+            padding: 6px 12px;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <center class="wrapper">
+        <table class="container">
+            <tr>
+                <td class="divider-row"></td>
+            </tr>
+            <tr>
+                <td>
+                    <table>
+                        <tr>
+                            <!-- First 3 column element -->
+                            <td class="three-column">
+                                <table class="column">
+                                    <tr>
+                                        <td>ONE Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni debitis iste atque reiciendis voluptatibus aperiam ex</td>
+                                    </tr>
+                                </table>
+                                <table class="column">
+                                    <tr>
+                                        <td>TWO Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni debitis iste atque reiciendis voluptatibus aperiam ex</td>
+                                    </tr>
+                                </table>
+                                <table class="column">
+                                    <tr>
+                                        <td>THREE Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni debitis iste atque reiciendis voluptatibus aperiam ex</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>                
+            </tr>            
+        </table>
+    </center>
+</body>
+</html>
