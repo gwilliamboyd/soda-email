@@ -16,6 +16,9 @@
             color: #ececec;
             font-family: sans-serif;
         }
+        a {
+            display: inline-block;
+        }
         .wrapper {
             width: 100%;
             table-layout: fixed;
@@ -56,20 +59,23 @@
             /* Setting font size to 0 prevents 
             extra spacing between elements */
             font-size: 0;
-            padding: 12px 0 24px;
+            padding: 12px 0;
             display: inline-block;
             width: 100%;
-            background-color: purple;           
+            background: linear-gradient(#ff7154, #ff6363);           
         }
         .two-col .col {            
             display: inline-block;
-            font-size: 16px;
+            font-size: 0;
             vertical-align: top;
             text-align: center;
             max-width: 300px;
             width: 100%;
-            padding: 20px 12px;
+            padding: 8px 82.5px;
             border: 0;
+        }
+        #social-icons {
+            font-size: 16px;
         }
         .col {
             width: 100%;
@@ -86,56 +92,49 @@
             <tr>
                 <td class="divider-row"></td>
             </tr>
+            <!-- Header bar -->
             <tr>
                 <td>
-                    <!-- 3 column layout -->
-                    <table>
+                    <table width="100%">
                         <tr>
-                            <td class="three-col">
-                                <!-- Column 1 -->
+                            <!-- 2 column layout -->
+                            <td class="two-col">
                                 <table class="col">
                                     <tr>
-                                        <td>ONE Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni debitis iste atque reiciendis voluptatibus aperiam ex</td>
+                                        <td>
+                                            <!-- Zam logo -->
+                                            <a href="#">
+                                                <!-- Image is 110px wide natively, needs re-export. Stretching to match social icons for now -->
+                                                <img src="./img/zam-header.png" alt="Zam logo" title="Visit our website!" width="135">
+                                            </a>
+                                        </td>
                                     </tr>
                                 </table>
-                                <!-- Column 2 -->
-                                <table class="col">
+                                <table class="col" id="social-icons">
                                     <tr>
-                                        <td>TWO Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni debitis iste atque reiciendis voluptatibus aperiam ex</td>
-                                    </tr>
-                                </table>
-                                <!-- Column 3 -->
-                                <table class="col">
-                                    <tr>
-                                        <td>THREE Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni debitis iste atque reiciendis voluptatibus aperiam ex</td>
+                                        <td>
+                                            <!-- Zam logo -->
+                                            <a href="#">
+                                                <img src="./img/pinterest-white.png" alt="Pinterest" title="Check out our Pinterest!" width="42">
+                                            </a>
+                                            <a href="#">
+                                                <img src="./img/instagram-white.png" alt="Instagram" title="Follow us on Instagram!" width="42">
+                                            </a>
+                                            <a href="#">
+                                                <img src="./img/tiktok-white.png" alt="TikTok" title="Check out our TikTok!" width="42">
+                                            </a>
+                                        </td>
                                     </tr>
                                 </table>
                             </td>
                         </tr>
-                    </table>
+                    </table>                  
                 </td>                
             </tr>
             <tr>
                 <td>
                     <!-- 2 column layout -->
-                    <table>
-                        <tr>
-                            <td class="two-col">
-                                <!-- Column 1 -->
-                                <table class="col">
-                                    <tr>
-                                        <td>ONE --- Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus consequatur a ipsa possimus impedit modi repudiandae assumenda eos, repellendus velit cum labore quos repellat dolore dolor.</td>
-                                    </tr>
-                                </table>
-                                <!-- Column 2 -->
-                                <table class="col">
-                                    <tr>
-                                        <td>TWO --- Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus consequatur a ipsa possimus impedit modi repudiandae assumenda eos, repellendus velit cum labore quos repellat dolore dolor.</td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
-                    </table>
+                    
                 </td>
             </tr>            
         </table>
