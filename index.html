@@ -20,6 +20,7 @@
         table {
             border-spacing: 0;
             width: 100%;
+            border-collapse: collapse;
         }
         td {
             padding: 0;
@@ -46,6 +47,13 @@
             background-color: #b5b5b5;
             height: 12px;
             width: 100%;
+        }
+        /* Targets an image */
+        .divider-row-narrow {
+            display: inline-block;
+            width: 540px;
+            height: 1px;
+            text-align: center;
         }
         .three-col {
             text-align: center;
@@ -120,38 +128,50 @@
                         <tr>
                             <!-- 2 column layout -->
                             <td class="two-col">
-                                <table class="col" style="padding: 8px 82.5px;">
+                                <table>
                                     <tr>
                                         <td>
-                                            <!-- Zam logo -->
-                                            <a href="#">
-                                                <!-- Image is 110px wide natively, needs re-export. Stretching to match social icons for now -->
-                                                <img src="./img/zam-header.png" alt="Zam logo" title="Visit our website!" style="width: 135px;">
-                                            </a>
+                                            <table class="col" style="padding: 8px 82.5px;">
+                                                <tr>
+                                                    <td>
+                                                        <!-- Zam logo -->
+                                                        <a href="#">
+                                                            <!-- Image is 110px wide natively, needs re-export. Stretching to match social icons for now -->
+                                                            <img src="./img/zam-header.png" alt="Zam logo" title="Visit our website!" style="width: 135px;">
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <table class="col" id="social-icons" style="padding: 21px 82.5px;">
+                                                <tr>
+                                                    <td>
+                                                        <!-- Zam logo -->
+                                                        <a href="#">
+                                                            <img src="./img/pinterest-white.png" alt="Pinterest" title="Check out our Pinterest!" style="width: 42px;">
+                                                        </a>
+                                                        <a href="#">
+                                                            <img src="./img/instagram-white.png" alt="Instagram" title="Follow us on Instagram!" style="width: 42px;">
+                                                        </a>
+                                                        <a href="#">
+                                                            <img src="./img/tiktok-white.png" alt="TikTok" title="Check out our TikTok!" style="width: 42px;">
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="divider-row-narrow">
+                                            <img src="./img/divider-bar.png" alt="" style="display: block;">
                                         </td>
                                     </tr>
                                 </table>
-                                <table class="col" id="social-icons" style="padding: 21px 82.5px;">
-                                    <tr>
-                                        <td>
-                                            <!-- Zam logo -->
-                                            <a href="#">
-                                                <img src="./img/pinterest-white.png" alt="Pinterest" title="Check out our Pinterest!" style="width: 42px;">
-                                            </a>
-                                            <a href="#">
-                                                <img src="./img/instagram-white.png" alt="Instagram" title="Follow us on Instagram!" style="width: 42px;">
-                                            </a>
-                                            <a href="#">
-                                                <img src="./img/tiktok-white.png" alt="TikTok" title="Check out our TikTok!" style="width: 42px;">
-                                            </a>
-                                        </td>
-                                    </tr>
-                                </table>
+                                
                             </td>
-                        </tr>
+                        </tr>                                                
                     </table>                  
                 </td>                
-            </tr>
+            </tr>            
             <tr>
                 <td>
                     <table width="100%">
