@@ -1,10 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C/DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/
+    TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Table center test</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zamblaster 7000!</title>
     <style>
         * {
             margin: 0;
@@ -16,18 +17,27 @@
             color: #ececec;
             font-family: sans-serif;
         }
+        table {
+            border-spacing: 0;
+            width: 100%;
+        }
+        td {
+            padding: 0;
+        }
         a {
             display: inline-block;
         }
         .wrapper {
-            width: 100%;
             table-layout: fixed;
-            background-color: #323232;
+            background-color: #323232; 
+            width: 100%;           
             padding-bottom: 60px;
         }
         .container {
             width: 100%;
             max-width: 600px;
+            text-align: center;
+            margin: 0 auto;
         }
         .divider-row {
             background-color: #b5b5b5;
@@ -62,7 +72,7 @@
             padding: 12px 0;
             display: inline-block;
             width: 100%;
-            background: linear-gradient(#ff7154, #ff6363);           
+            background-color: #ff6363;           
         }
         .two-col .col {            
             display: inline-block;
@@ -73,6 +83,15 @@
             width: 100%;
             padding: 8px 82.5px;
             border: 0;
+        }
+        .one-col {
+            background: linear-gradient(#ff6363, #ff7154);           
+            display: inline-block;
+            vertical-align: top;
+            text-align: center;
+            font-size: 0;
+            max-width: 600px;
+            width: 100%;
         }
         #social-icons {
             font-size: 16px;
@@ -87,7 +106,7 @@
     <!-- Center tag keeps email centered - deprecated -->
     <center class="wrapper">
         <!-- Master table for entire email -->
-        <table class="container">
+        <table class="container" width="100%">
             <!-- Gray dividing bar - top -->
             <tr>
                 <td class="divider-row"></td>
@@ -133,8 +152,36 @@
             </tr>
             <tr>
                 <td>
-                    <!-- 2 column layout -->
-                    
+                    <table width="100%">
+                        <tr>
+                            <td class="one-col">
+                                <!-- Need to set images to vw to scale with mobile -->
+                                <table width="100%">
+                                    <tr>
+                                        <td style="padding-top: 50px;">
+                                            <a href="#">
+                                                <img src="./img/product-intro.png" alt="Product Intro" width="382">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding-top: 41px;">
+                                            <a href="#">
+                                                <img src="./img/soda-maker.png" alt="Zamblaster 7000" title="Oooooh shiny!" width="354">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 46px 0 60px;">
+                                            <a href="#">
+                                                <img src="./img/product-tagline.png" alt="Product Tagline"width="540">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>                            
+                        </tr>
+                    </table>                    
                 </td>
             </tr>            
         </table>
