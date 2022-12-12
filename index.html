@@ -72,7 +72,7 @@
             text-align: center;
             max-width: 200px;
             width: 100%;
-            padding: 16px 12px;
+            padding: min(2.6666666666667vw, 16px) min(2vw, 12px);
             border: 0;
         }
         .two-col {
@@ -80,7 +80,7 @@
             /* Setting font size to 0 prevents 
             extra spacing between elements */
             font-size: 0;
-            padding: 12px 0;
+            padding: min(2vw, 12px) 0;
             display: inline-block;
             width: 100%;
             background-color: #ff6363;           
@@ -114,7 +114,7 @@
             background-color: #c6c6c6;
             color: #1b9bff;
             font-size: 0.75rem;
-            padding: 4px 16px;
+            padding: min(0.66666666666667vw, 4px) min(2.6666666666667vw, 16px);
         }
         /*
 https://i.ibb.co/s1nTrNg/3x-faster-desc.png
@@ -175,10 +175,10 @@ https://i.ibb.co/T1DTJmF/zam-header.png
                                                     </td>
                                                 </tr>
                                             </table>
-                                            <table class="col" id="social-icons" style="padding: 21px 82.5px;">
+                                            <table class="col" id="social-icons" style="padding: 21px 82.5px">
                                                 <tr>
                                                     <td>
-                                                        <!-- Zam logo -->
+                                                        <!-- Social media icons -->
                                                         <a href="#">
                                                             <img src="https://i.ibb.co/TKhTLXR/pinterest-white.png" alt="Pinterest" title="Check out our Pinterest!" style="width: 42px;">
                                                         </a>
@@ -336,23 +336,27 @@ https://i.ibb.co/T1DTJmF/zam-header.png
                                             <table width="100%" style="background: linear-gradient(#ff6363, #ff7154);">
                                                 <tr>
                                                     <!-- Pinterest body text -->
-                                                    <td style="padding-top: 36px;">
+                                                    <td style="padding: 36px min(6.6666666666667vw, 40px) 0;">
                                                         <img src="https://i.ibb.co/HD6CyBm/flavors-pinterest-body.png" alt="">
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <!-- Pinterest follow link -->
-                                                    <td style="padding-top: 8px;">
-                                                        <a href="#"><img src="https://i.ibb.co/0qrx6gV/pinterest-follow.png" alt="Pinterest link" title="Delicious recipes on our Pinterest!"></a>
+                                                    <!-- For some reason, the padding is not registering for this img. Can't tell if it's a bug with Chrome or VSCode -->
+                                                    <!-- Let's be honest though, it's probably not Chrome or VSCode's fault -->
+                                                    <td style="padding: 8px min(21.666666666667vw, 130px) 0;">
+                                                        <a href="#">
+                                                            <img src="https://i.ibb.co/0qrx6gV/pinterest-follow.png" alt="Pinterest link" title="Delicious recipes on our Pinterest!">
+                                                        </a>
                                                     </td>
                                                 </tr>                                    
                                             </table>                       
                                             <table width="100%" style="background: linear-gradient(#ff7154, #ff6363);">
                                                 <!-- 3 Bottles -->
                                                 <tr>
-                                                    <td class="three-col">
+                                                    <td class="three-col" style="padding: 0 40px;">
                                                         <!-- Green bottle -->
-                                                        <table class="col" style="padding: 16px 0;">
+                                                        <table class="col" style="padding: 16px 0;max-width: 160px;">
                                                             <tr>
                                                                 <td>
                                                                     <a href="#"><img src="https://i.ibb.co/MN644cM/bottle-green.png" alt="Green Apple" title="Green Apple"></a>
@@ -360,7 +364,7 @@ https://i.ibb.co/T1DTJmF/zam-header.png
                                                             </tr>
                                                         </table>
                                                         <!-- Purple bottle -->
-                                                        <table class="col" style="padding: 16px 0;">
+                                                        <table class="col" style="padding: 16px 0;max-width: 160px;">
                                                             <tr>
                                                                 <td>
                                                                     <a href="#"><img src="https://i.ibb.co/WvmXrd7/bottle-purple.png" alt="Grape" title="Grape"></a>
@@ -368,7 +372,7 @@ https://i.ibb.co/T1DTJmF/zam-header.png
                                                             </tr>
                                                         </table>
                                                         <!-- Blue bottle -->
-                                                        <table class="col" style="padding: 16px 0;">
+                                                        <table class="col" style="padding: 16px 0;max-width: 160px;">
                                                             <tr>
                                                                 <td>
                                                                     <a href="#"><img src="https://i.ibb.co/vV5h9Wg/bottle-blue.png" alt="Blue Raspberry" title="Blue Raspberry"></a>
@@ -416,7 +420,7 @@ https://i.ibb.co/T1DTJmF/zam-header.png
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td class="three-col" style="padding: 24px 60px 42px;">
+                                        <td class="three-col" style="padding: 24px 40px 42px;">
                                             <table class="col" style="padding: 12px 35px;max-width: 160px;">
                                                 <tr>
                                                     <td>
